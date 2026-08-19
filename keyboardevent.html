@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form{
+            width: 400px;
+            height: 500px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 10px;
+            margin: 50px auto;
+            border: 1px solid black;
+        }
+        #h1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1 id="h1">Keyboard Events</h1>
+        <p>onKeydown</p>
+        <input type="text" id="input1" onkeydown="alert(this.value)">
+        <p>onKeyup</p>
+        <input type="text" id="input2" onkeyup="alert(this.value)">
+        <p>onKeypress</p>
+        <input type="text" id="input3" onkeypress="alert(this.value)">
+        <p>key up by dom</p><input type="text" onKeyup="document.getElementById('form').style.background=this.value">
+        <p>key down by dom</p><input type="text" onKeydown="document.getElementById('form').style.background=this.value">
+        <p>key press by dom</p><input type="text" onKeypress="document.getElementById('form').style.background=this.value">
+        <script>
+            function keydown(){
+                alert("this is the example of keydown event");   
+            }   
+            function keyup(){
+                alert("this is the example of keyup event");
+            }
+            function keypress(){
+                alert("this is the example of keypress event");
+            }
+        </script>
+    </div>
+</body>
+</html>
