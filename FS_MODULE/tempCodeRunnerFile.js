@@ -1,2 +1,8 @@
- fs.writeFileSync('student.txt','this is i made for delted','utf-8');
-//  console.log('file is written successfully')
+fs.unlink('sample.txt',(err)=>{
+//     if(err){
+//         console.log('error deleting file:',err);
+//     }
+//     else{
+//         console.log('file delted succesfully');
+//     }
+// })
