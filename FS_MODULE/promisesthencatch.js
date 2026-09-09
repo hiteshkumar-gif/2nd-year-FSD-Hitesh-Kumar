@@ -42,3 +42,14 @@ async function renameFile(){
     }
 }
 renameFile();
+
+//delete
+// async function deleteFile(){
+//     try{
+//         await fs.unlink("renamedPromise.txt");
+//         console.log("File deleted successfully.");
+//     } catch(error){
+//         console.log("Error:",error);
+//     }
+// }
+// deleteFile();   
