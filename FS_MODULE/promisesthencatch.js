@@ -22,3 +22,23 @@ async function readFile(){
 }
 readFile();
 //update
+async function updateFile(){
+    try{
+        await fs.appendFile("promise.txt","\nThis is an appended text.");
+        console.log("File updated successfully.");
+    } catch(error){
+        console.log("Error:",error);
+    }
+}
+updateFile();
+
+//rename
+async function renameFile(){
+    try{
+        await fs.rename("promise.txt","renamedPromise.txt");
+        console.log("File renamed successfully.");
+    } catch(error){
+        console.log("Error:",error);
+    }
+}
+renameFile();
