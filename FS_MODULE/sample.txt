@@ -1,3 +1,0 @@
-Welcome To Full Stack Development
-This is an appended text.
-This is an text.
