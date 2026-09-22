@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>CSE DS A Quiz</title>
-
     <link rel="stylesheet" href="ass1_quiz.css">
+    <!-- Ensure your JS file is included in quiz.html too so buttons and timers function -->
+    <script src="ass1_quiz.js" defer></script>
 </head>
 
 <body>
@@ -15,292 +15,98 @@
 
         <h1>CSE DS A QUIZ</h1>
 
-        <!-- Question 1 -->
+       
+        <div id="timerBox">
+            <span class="timer-icon">⏱️</span>
+            <span id="timerDisplay">Time Left: 30s</span>
+        </div>
+
+      
         <div class="question">
             <h2>Question 1</h2>
             <p>What does HTML stand for?</p>
-
-            <label>
-                <input type="radio" name="q1" value="a">
-                Hyper Text Markup Language
-            </label><br>
-
-            <label>
-                <input type="radio" name="q1" value="b">
-                High Text Machine Language
-            </label><br>
-
-            <label>
-                <input type="radio" name="q1" value="c">
-                Hyper Tool Markup Language
-            </label><br>
-
-            <label>
-                <input type="radio" name="q1" value="d">
-                Hyperlinks Text Mark Language
-            </label>
+            <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label><br>
+            <label><input type="radio" name="q1" value="b"> High Text Machine Language</label><br>
+            <label><input type="radio" name="q1" value="c"> Hyper Tool Markup Language</label><br>
+            <label><input type="radio" name="q1" value="d"> Hyperlinks Text Mark Language</label>
         </div>
 
-
-        <!-- Question 2 -->
+     
         <div class="question">
             <h2>Question 2</h2>
             <p>Which language is used to style a web page?</p>
-
-            <label>
-                <input type="radio" name="q2" value="a">
-                HTML
-            </label><br>
-
-            <label>
-                <input type="radio" name="q2" value="b">
-                CSS
-            </label><br>
-
-            <label>
-                <input type="radio" name="q2" value="c">
-                JavaScript
-            </label><br>
-
-            <label>
-                <input type="radio" name="q2" value="d">
-                Python
-            </label>
+            <label><input type="radio" name="q2" value="a"> HTML</label><br>
+            <label><input type="radio" name="q2" value="b"> CSS</label><br>
+            <label><input type="radio" name="q2" value="c"> JavaScript</label><br>
+            <label><input type="radio" name="q2" value="d"> Python</label>
         </div>
 
-
-        <!-- Question 3 -->
+     
         <div class="question">
             <h2>Question 3</h2>
             <p>Which language is mainly used to make web pages interactive?</p>
-
-            <label>
-                <input type="radio" name="q3" value="a">
-                HTML
-            </label><br>
-
-            <label>
-                <input type="radio" name="q3" value="b">
-                CSS
-            </label><br>
-
-            <label>
-                <input type="radio" name="q3" value="c">
-                JavaScript
-            </label><br>
-
-            <label>
-                <input type="radio" name="q3" value="d">
-                SQL
-            </label>
+            <label><input type="radio" name="q3" value="a"> HTML</label><br>
+            <label><input type="radio" name="q3" value="b"> CSS</label><br>
+            <label><input type="radio" name="q3" value="c"> JavaScript</label><br>
+            <label><input type="radio" name="q3" value="d"> SQL</label>
         </div>
 
-
-        <!-- Question 4 -->
+       
         <div class="question">
             <h2>Question 4</h2>
             <p>Which tag is used to create a hyperlink in HTML?</p>
-
-            <label>
-                <input type="radio" name="q4" value="a">
-                &lt;p&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q4" value="b">
-                &lt;h1&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q4" value="c">
-                &lt;a&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q4" value="d">
-                &lt;link&gt;
-            </label>
+            <label><input type="radio" name="q4" value="a"> &lt;p&gt;</label><br>
+            <label><input type="radio" name="q4" value="b"> &lt;h1&gt;</label><br>
+            <label><input type="radio" name="q4" value="c"> &lt;a&gt;</label><br>
+            <label><input type="radio" name="q4" value="d"> &lt;link&gt;</label>
         </div>
 
-
-        <!-- Question 5 -->
+       
         <div class="question">
             <h2>Question 5</h2>
             <p>Which symbol is used for an ID selector in CSS?</p>
-
-            <label>
-                <input type="radio" name="q5" value="a">
-                .
-            </label><br>
-
-            <label>
-                <input type="radio" name="q5" value="b">
-                #
-            </label><br>
-
-            <label>
-                <input type="radio" name="q5" value="c">
-                *
-            </label><br>
-
-            <label>
-                <input type="radio" name="q5" value="d">
-                @
-            </label>
+            <label><input type="radio" name="q5" value="a"> .</label><br>
+            <label><input type="radio" name="q5" value="b"> #</label><br>
+            <label><input type="radio" name="q5" value="c"> *</label><br>
+            <label><input type="radio" name="q5" value="d"> @</label>
         </div>
 
-
-        <!-- Question 6 -->
+       
         <div class="question">
             <h2>Question 6</h2>
             <p>Which symbol is used for a class selector in CSS?</p>
-
-            <label>
-                <input type="radio" name="q6" value="a">
-                #
-            </label><br>
-
-            <label>
-                <input type="radio" name="q6" value="b">
-                @
-            </label><br>
-
-            <label>
-                <input type="radio" name="q6" value="c">
-                .
-            </label><br>
-
-            <label>
-                <input type="radio" name="q6" value="d">
-                *
-            </label>
+            <label><input type="radio" name="q6" value="a"> #</label><br>
+            <label><input type="radio" name="q6" value="b"> @</label><br>
+            <label><input type="radio" name="q6" value="c"> .</label><br>
+            <label><input type="radio" name="q6" value="d"> *</label>
         </div>
 
-
-        <!-- Question 7 -->
+      
         <div class="question">
             <h2>Question 7</h2>
             <p>Which HTML tag is used to create the largest heading?</p>
-
-            <label>
-                <input type="radio" name="q7" value="a">
-                &lt;h6&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q7" value="b">
-                &lt;head&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q7" value="c">
-                &lt;h1&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q7" value="d">
-                &lt;heading&gt;
-            </label>
+            <label><input type="radio" name="q7" value="a"> &lt;h6&gt;</label><br>
+            <label><input type="radio" name="q7" value="b"> &lt;head&gt;</label><br>
+            <label><input type="radio" name="q7" value="c"> &lt;h1&gt;</label><br>
+            <label><input type="radio" name="q7" value="d"> &lt;heading&gt;</label>
         </div>
 
-
-        <!-- Question 8 -->
+      
         <div class="question">
             <h2>Question 8</h2>
             <p>Which HTML tag is used to create a paragraph?</p>
-
-            <label>
-                <input type="radio" name="q8" value="a">
-                &lt;para&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q8" value="b">
-                &lt;p&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q8" value="c">
-                &lt;text&gt;
-            </label><br>
-
-            <label>
-                <input type="radio" name="q8" value="d">
-                &lt;paragraph&gt;
-            </label>
+            <label><input type="radio" name="q8" value="a"> &lt;para&gt;</label><br>
+            <label><input type="radio" name="q8" value="b"> &lt;p&gt;</label><br>
+            <label><input type="radio" name="q8" value="c"> &lt;text&gt;</label><br>
+            <label><input type="radio" name="q8" value="d"> &lt;paragraph&gt;</label>
         </div>
 
-
-        <!-- Question 9 -->
-        <div class="question">
-            <h2>Question 9</h2>
-            <p>Which method is used to select an element by its ID in JavaScript?</p>
-
-            <label>
-                <input type="radio" name="q9" value="a">
-                getElementByClass()
-            </label><br>
-
-            <label>
-                <input type="radio" name="q9" value="b">
-                getElementByName()
-            </label><br>
-
-            <label>
-                <input type="radio" name="q9" value="c">
-                getElementById()
-            </label><br>
-
-            <label>
-                <input type="radio" name="q9" value="d">
-                selectById()
-            </label>
-        </div>
-
-
-        <!-- Question 10 -->
-        <div class="question">
-            <h2>Question 10</h2>
-            <p>Which keyword is used to declare a variable in JavaScript?</p>
-
-            <label>
-                <input type="radio" name="q10" value="a">
-                variable
-            </label><br>
-
-            <label>
-                <input type="radio" name="q10" value="b">
-                var
-            </label><br>
-
-            <label>
-                <input type="radio" name="q10" value="c">
-                int
-            </label><br>
-
-            <label>
-                <input type="radio" name="q10" value="d">
-                define
-            </label>
-        </div>
-
-
-        <!-- Navigation buttons -->
-        <div class="buttons">
-
-            <button type="button" id="prevBtn" onclick="previousQuestion()">
-                Previous
-            </button>
-
-            <button type="button" id="nextBtn" onclick="nextQuestion()">
-                Next
-            </button>
-
+       
+        <div class="navigation-buttons" style="margin-top: 20px;">
+            <button id="prevBtn" onclick="previousQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
         </div>
 
     </div>
-
-    <script src="ass1_quiz.js"></script>
-
 </body>
 </html>
